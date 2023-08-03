@@ -1,0 +1,105 @@
+/* Home - Slider */
+#body {
+  line-height: 1;
+}
+
+.sliderBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.leftRightBtn {
+  margin-top: -90px;
+  margin-bottom: 45px;
+}
+
+/* Home - BtnGroup */
+.btnGroup {
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 40px;
+  /* width: 85%; */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Home - Futures */
+.futures {
+  padding: 10px 10px 0px 10px;
+}
+
+/* Home - Hotbets */
+.hotBets {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0px 10px;
+}
+
+/* Home - Latest Promotion */
+.latestP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  /* justify-content: "space-between"; */
+}
+
+.tndcSize {
+  color: #000;
+  font-size: 13px;
+}
+
+/* Home - OptionBtn */
+.homeoptionBox {
+  background-color: #F0F1F3;
+  padding: 10px;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+}
+
+.btnGrp {
+  border-radius: 30px;
+  background-color: #e0e0e0;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homebtnGrp {
+  background-color: #e8e9ea;
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionBox {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+}
+
+.homeoptnBtn {
+  border-radius: 4px !important;
+  border: none !important;
+  padding: 3;
+  width: 115px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.optnSportsBtn {
+  border-radius: 30px !important;
+  border: none !important;
+  padding: 3;
+  width: 170px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000000;
+}

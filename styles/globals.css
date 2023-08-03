@@ -1,0 +1,955 @@
+:root {
+    --white: #fff;
+    --red-light: #fedcdb;
+    --grey-light: #f0f1f2;
+    --red: #ff0000;
+    --black: #000;
+    --black-light: #333;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+.page-content-left {
+    flex: 0 1 250px;
+    max-width: 250px;
+    min-width: 250px;
+    padding-top: 20px;
+    max-height: 150vh;
+    overflow: auto;
+}
+
+.page {
+    max-width: calc(100% - 250px);
+    min-width: calc(100% - 250px);
+    padding-top: 20px;
+}
+
+.page-content-left {
+    flex: 0 1 310px;
+    max-width: 310px;
+    min-width: 310px;
+    padding-top: 20px;
+    max-height: 150vh;
+    overflow: auto;
+}
+
+.page310 {
+    max-width: calc(100% - 310px);
+    min-width: calc(100% - 310px);
+    padding-top: 20px;
+}
+
+.homeActiveTab {
+    background-image: linear-gradient(180deg,
+            rgb(244, 244, 244) 0%,
+            rgb(255, 255, 255) 100%);
+}
+
+.logo {
+    /* width: 110px; */
+    height: 28px;
+}
+
+.tableFontsize {
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    line-height: 1 !important;
+}
+
+.MuiListItemIcon-root {
+    min-width: auto !important;
+}
+
+.redBadge {
+    background-color: var(--red-light) !important;
+    color: var(--red) !important;
+}
+
+.greyBadge {
+    background-color: var(--grey-light) !important;
+    color: var(--black) !important;
+}
+
+.MuiCardContent-root:last-child {
+    padding-bottom: 0px;
+}
+
+.MuiCard-root {
+    box-shadow: none;
+}
+
+.slideritem.MuiCardContent-root:last-child {
+    padding-bottom: 0;
+}
+
+.carouselitem {
+    background-color: var(--white);
+    color: var(--black);
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.textCapitalize {
+    text-transform: capitalize;
+}
+
+.MuiDivider-light {
+    border-color: #d0d1d2;
+}
+
+/* .MuiPaper-root{
+    border-radius: 6px;
+} */
+.MuiCard-root:not(.HeaderModal) {
+    border-radius: 8px;
+}
+
+.MuiBottomNavigationAction-label {
+    color: var(--black);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.MuiBottomNavigationAction-label.Mui-selected {
+    font-size: 12px;
+}
+
+.MuiDialog-paper:not(.MuiDialog-paperFullScreen) {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.MuiTabPanel-root:first-child {
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .MuiTable-root tr:last-child>td {
+        border: 0;
+    }
+
+    /* html,
+    body {
+        -webkit-overflow-scrolling: touch !important;
+        overflow: auto !important;
+        height: 100% !important;
+    } */
+}
+
+.racingTable td {
+    height: 52px;
+}
+
+.racingTable td:not(:last-child)>* {
+    font-size: 12px;
+}
+
+.racingTable .MuiSvgIcon-root {
+    font-size: 20px !important;
+}
+
+.resultsSubMenu .MuiTab-root {
+    min-width: auto;
+    padding: 1px 10px;
+    min-height: 35px;
+}
+
+.RacingTabs .MuiTab-root {
+    border-radius: 30px;
+    padding: 8px 11px;
+    min-height: 20px;
+    margin-right: 10px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.CustomTabs .MuiTab-root {
+    min-width: 64px;
+}
+
+.RacingTabs .MuiTab-iconWrapper,
+.resultsSubMenu .MuiTab-iconWrapper,
+.buyTipsMenu .MuiTab-iconWrapper {
+    margin: 0;
+    margin-left: 6px;
+}
+
+.RacingTabs,
+.resultsSubMenu {
+    min-height: 40px;
+    align-items: center;
+}
+
+.TipsterTabs .MuiTab-root {
+    padding: 8px;
+    min-width: 75px;
+}
+
+.textAlignCoulmnCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MuiSvgIcon-colorAction {
+    color: var(--black);
+}
+
+.MuiSelect-select:focus {
+    background-color: transparent;
+}
+
+.AvatarUploadPos {
+    position: relative;
+    top: 20px;
+}
+
+.RacingIcons .MuiFormControlLabel-label {
+    color: var(--black-light);
+    font-size: 12px;
+}
+
+.RacingIcons .MuiSvgIcon-root {
+    background: var(--white);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.carouselIcons .MuiRadio-root {
+    padding: 4px;
+}
+
+.footerIcons .MuiBottomNavigationAction-root {
+    min-width: 77px;
+}
+
+.RacingTabs .MuiTabScrollButton-root,
+.resultsSubMenu .MuiTabScrollButton-root,
+.buyTipsMenu .MuiTabScrollButton-root {
+    width: 20px;
+}
+
+.RacingTabs .MuiTabs-scrollButtons .MuiSvgIcon-root,
+.resultsSubMenu .MuiTabs-scrollButtons .MuiSvgIcon-root {
+    font-size: 20px;
+}
+
+.floatRight {
+    float: right !important;
+}
+
+.HomeTabButton {
+    border-radius: 30px;
+    padding: 8px 11px;
+    min-height: 20px;
+    margin-right: 5px;
+    color: #000;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    border: 0;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.RacingTabButton {
+    border-radius: 30px;
+    padding: 8px 11px;
+    min-height: 20px;
+    margin-right: 5px;
+    color: #000;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    border: 0;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.RacingTabButton:active,
+.RacingTabButton:focus {
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.BetProductSelect {
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.BetProductSelect .MuiSelect-select {
+    padding: 3px 10px 3px 15px !important;
+}
+
+.FavBadge .MuiBadge-badge {
+    right: 50%;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0 10px;
+    top: -8px;
+    font-size: 10px;
+    z-index: 0;
+    border: 1px solid grey;
+    height: 16px;
+}
+
+.successCheckbox {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+.HeaderBadge .MuiBadge-badge {
+    width: 17px;
+    height: 17px;
+    min-width: 10px;
+    font-size: 9px;
+    padding: 0;
+}
+
+.customKeypad {
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.MuiAccordionSummary-root.Mui-expanded {
+    min-height: auto;
+}
+
+.MuiAccordionSummary-content.Mui-expanded {
+    margin: 10px 0;
+}
+
+.MuiCardHeader-avatar {
+    margin-right: 10px;
+}
+
+.custombtn {
+    background-color: #3f3f3f;
+    /* border: 1px solid #363636; */
+    border-radius: 7px;
+    color: #fff;
+    height: 40px;
+}
+
+.btnError {
+    border: 2px solid #f60406;
+}
+
+.custombtn .MuiOutlinedInput-root {
+    color: #fff;
+    height: 100%;
+}
+
+.custombtn .Mui-focused {
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+
+.custombtn .Mui-focused .MuiInputAdornment-root .MuiTypography-root {
+    color: #000;
+}
+
+.custombtn .MuiOutlinedInput-input {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    margin-right: 10px;
+    caret-color: #000;
+}
+
+/* .custombtn .Mui-focused .MuiOutlinedInput-input {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: customCursor;
+    animation-timing-function: step-end;
+    border-right: 1px solid #fff;
+    border-radius: 0;
+} */
+
+.custombtn .MuiOutlinedInput-notchedOutline {
+    border: 0;
+    top: 0;
+}
+
+.resultedRaceTable .MuiGrid-root:not(:first-child) {
+    pointer-events: none;
+}
+
+.up-arrow {
+    width: 0;
+    height: 0;
+    border: solid 4px transparent;
+    background: transparent;
+    border-bottom: solid 5px grey;
+    border-top-width: 0;
+    cursor: pointer;
+}
+
+.down-arrow {
+    width: 0;
+    height: 0;
+    border: solid 4px transparent;
+    background: transparent;
+    border-top: solid 5px grey;
+    border-bottom-width: 0;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.BetProductsSelect:after,
+.BetProductsSelect:before,
+.BetProductsSelect:hover:after,
+.BetProductsSelect:hover:before {
+    border-bottom: 0 !important;
+}
+
+.MuiSnackbarContent-root {
+    padding: 0;
+}
+
+.MuiSnackbarContent-message {
+    padding: 0;
+    width: 100%;
+}
+
+.RacemeetSelect .MuiSelect-select {
+    padding-right: 2px !important;
+}
+
+.RacemeetSelect .MuiSelect-select span {
+    font-size: 16px;
+}
+
+.HideTextOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes customCursor {
+
+    0%,
+    100% {
+        border-color: #000;
+    }
+
+    40% {
+        border-color: #ffffff;
+    }
+}
+
+/* image uploader styles */
+
+.img-uploader-preview-image {
+    width: 70;
+    height: 70;
+}
+
+.img-uploader-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.img-uploader-sub-title {
+    text-align: center;
+    font-weight: 200;
+    margin: 0;
+}
+
+.img-uploader-error {
+    text-align: center;
+    color: red;
+}
+
+.img-preview-title {
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-preview-sub-title {
+    text-align: center !important;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-accordin {
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.form-wrapper {
+    height: inherit;
+    overflow: scroll;
+    padding: 2%;
+}
+
+.form-container {
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.fieldText {
+    color: var(--black);
+}
+
+.MuiMenu-paper {
+    transition-duration: 0 !important;
+}
+
+/* ---------sport page */
+.data-row-tilte-text {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: rgb(0, 0, 0);
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    line-height: 1 !important;
+}
+
+.data-row-sub-tilte-text {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    overflow-wrap: break-word;
+}
+
+.oddsBtn {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 0px 0px #dddddd;
+}
+
+*:focus {
+    outline: none;
+}
+
+.lineClamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lineClamp3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lineClamp4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lineClamp6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lineClamp7 {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+.alerts-border {
+    border: 1px #ff0000 solid;
+    animation: blink 1s step-end infinite alternate;
+}
+
+@keyframes blink {
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* ------------- */
+.custombtntest {
+    background-color: #ffffff;
+    border: 1px solid #363636;
+    border-radius: 7px;
+    color: #fff;
+    height: 40px;
+}
+
+.custombtntest .MuiOutlinedInput-root {
+    color: #fff;
+    height: 100%;
+}
+
+.custombtntest .Mui-focused {
+    background-color: #fff;
+    color: #000;
+}
+
+.custombtntest .Mui-focused .MuiInputAdornment-root .MuiTypography-root {
+    color: #000;
+}
+
+.custombtntest .MuiOutlinedInput-input {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    margin-right: 10px;
+}
+
+.custombtntest .Mui-focused .MuiOutlinedInput-input {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: customCursor;
+    animation-timing-function: step-end;
+    border-right: 1px solid #fff;
+    border-radius: 0;
+}
+
+.custombtntest .MuiOutlinedInput-notchedOutline {
+    border: 0;
+    top: 0;
+}
+
+.raw-html-content ol {
+    list-style-type: upper-alpha;
+    padding-left: 30px;
+}
+
+.raw-html-content ol ol {
+    list-style-type: lower-roman;
+}
+
+.raw-html-content ol ol ol {
+    list-style-type: circle;
+}
+
+.raw-html-content li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.SpeedMapBar {
+    animation: 1s ease 0s 1 normal forwards running width;
+    background-image: linear-gradient(90deg,
+            rgb(252, 243, 192) 0%,
+            rgb(255, 222, 23) 100%);
+    /*background: repeating-linear-gradient(120deg, #fff 0, #fff 1px, #fdef9c 0.2em, #FCDF4C calc(0.2em + 1px), #FCDF4C 0.4em);*/
+}
+
+.SpeedMapBarGTO {
+    animation: 1s ease 0s 1 normal forwards running width;
+    background-image: linear-gradient(90deg,
+            rgb(232, 198, 237) 0%,
+            rgba(144, 47, 161) 90%);
+    /*background: repeating-linear-gradient(120deg, #fff 0, #fff 1px, #fdef9c 0.2em, #FCDF4C calc(0.2em + 1px), #FCDF4C 0.4em);*/
+}
+
+.NoDataBar {
+    background-image: linear-gradient(90deg,
+            rgb(238, 238, 238) 0%,
+            rgb(204, 204, 204) 100%);
+    /* background: repeating-linear-gradient(120deg, #fff 0, #fff 1px, #e6e6e6 0.2em, #cecece calc(0.2em + 1px), #cecece 0.4em)*/
+}
+
+.AnimateSpeedMap {
+    animation-name: speedmap;
+}
+
+@keyframes speedmap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.bg-HbModal {
+    background-image: linear-gradient(0deg,
+            rgb(249, 223, 79) 39%,
+            rgb(255, 255, 255) 87%);
+}
+
+.hideme {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    color: rgb(255, 255, 255);
+    padding: 8px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: rgb(89, 171, 1);
+    box-shadow: rgb(56 108 1) 0px 2px 0px 0px;
+    border-radius: 6px;
+}
+
+.FeatureArticle img {
+    width: 100%;
+}
+
+.FeatureArticle li {
+    font-size: 14px;
+}
+
+.FeatureArticle h2 {
+    font-size: 17px;
+    color: #414141
+}
+
+.FeatureArticle h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.FeatureArticle h4,
+.FeatureArticle h5,
+.FeatureArticle h6 {
+    font-size: 14px;
+}
+
+
+.FeatureArticle a {
+    color: #902fa1
+}
+
+.LbSubMenu .MuiTab-root {
+    color: #949494;
+    border-bottom: 1px solid #e8e0e0;
+}
+
+.LbSubMenu .Mui-selected {
+    color: #000;
+}
+
+.newsDetail p {
+    margin: 0;
+}
+
+.ListSquareStyle li {
+    list-style-type: square;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.ListSquareStyle li::marker {
+    color: #8f40b5;
+    font-size: 25px;
+}
+
+.ReportRaceTitle:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 0 0 10px;
+}
+
+.react-player__preview {
+    opacity: 0.2;
+}
+
+.tipsterBio p,
+.tipsterBio ul,
+.tipsterBio li {
+    font-size: 13px;
+}
+
+.pendingCommentBox:before {
+    border-bottom: 0;
+}
+
+.pendingCommentBox:hover:before {
+    border-bottom: 0 !important;
+}
+
+.pendingCommentBox:after {
+    border-bottom: 0;
+}
+
+.pendingCommentBox:hover:after {
+    border-bottom: 0 !important;
+}
+
+
+.live-indicator {
+    position: absolute;
+    bottom: 105px;
+}
+
+.live-indicator__circle {
+    animation: status-pulse 2s infinite ease-in-out;
+    border: 2px solid #00bf16;
+    border-radius: 999px;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+}
+
+.live-indicator__circle--delayed {
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .4
+    }
+}
+
+@keyframes status-pulse {
+
+    0%,
+    to {
+        background: #00bf16;
+        transform: scale(0)
+    }
+
+    50% {
+        background: transparent;
+        transform: scale(1)
+    }
+}
+
+.freeTipBtn {
+    background-color: #ecd9ef;
+    color: #ab6cb8
+}
+
+.buyTipsMenu {
+    min-height: 30px
+}
+
+.buyTipsMenu .MuiTab-root {
+    min-width: auto;
+    padding: 1px 10px;
+    min-height: 20px;
+    color: #909090;
+    font-size: 15px;
+}
+
+.buyTipsMenu .MuiTab-root .Mui-selected {
+    color: #4d4d4d
+}
+
+.buyTipsMenu .MuiTabs-indicator {
+    background-color: #4d4d4d;
+    height: 1px
+}
+
+.newssubmenu {
+    border: 1px solid #ddd;
+    background-color: #ededed;
+    font-size: 12px;
+    padding: 0 5px 5px 5px;
+    text-align: center;
+}
+
+.newssubmenu a {
+    color: #52027f;
+    text-decoration: underline;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.fullWidthAlert .MuiAlert-message {
+    width: 100%
+}
+
+.addCardBtn input:not(.Mui-disabled) {
+    cursor: pointer;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image-container .image {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    cursor: pointer
+}

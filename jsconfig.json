@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@Components/*": [
+                "components/*"
+            ],
+            "@services/*": [
+                "services/*"
+            ],
+            "@Models/*": [
+                "Models/*"
+            ],
+            "@lib/*": [
+                "lib/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
+            "@Context/*": [
+                "Context/*"
+            ],
+            "@public/*": [
+                "public/*"
+            ],
+            "@styles/*": [
+                "styles/*"
+            ],
+            "@modules/*": [
+                "modules/*"
+            ],
+            "@stores/*": [
+                "stores/*"
+            ],
+        }
+    },
+    "include": [
+        "."
+    ]
+}

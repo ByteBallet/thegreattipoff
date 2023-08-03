@@ -1,0 +1,15 @@
+:root {
+    --white: #fff;
+    --red-light: #fedcdb;
+    --grey-light: #f0f1f2;
+    --red: #ff0000;
+    --black: #000;
+    --black-light: #333;
+    --primary-yellow: #FCDF4C;
+    --green: #58aa00;
+}
+
+@import "transaction";
+@import "custom";
+@import "graph";
+@import "hotbet";

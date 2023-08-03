@@ -1,0 +1,52 @@
+.event-text {
+    fill: black;
+    font-size: 8px;
+    font-family: sans-serif;
+}
+
+.bet-details-text-box {
+    background-color: #ffffff;
+    border: 1px solid #d3cece;
+    border-radius: 7px;
+    color: #fff;
+    height: 22px;
+    width: 90px;
+}
+
+.bet-details-text-box .MuiOutlinedInput-root {
+    color: #000;
+    height: 100%;
+}
+
+.bet-details-text-box .Mui-focused {
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+
+.bet-details-text-box .Mui-focused .MuiInputAdornment-root .MuiTypography-root {
+    color: #000;
+    caret-color: #000;
+
+}
+
+.bet-details-text-box .Mui-focused   {
+    height: 125%;
+    width: 100%;
+    border-radius: 5.5px !important;
+
+
+}
+
+.bet-details-text-box .MuiOutlinedInput-input {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    margin-right: 10px;
+    caret-color: #000;
+}
+
+.bet-details-text-box .MuiOutlinedInput-notchedOutline {
+    border: 0;
+    top: 0;
+}

@@ -1,0 +1,241 @@
+.transactions-dropdown-button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    background: var(--white);
+    padding-bottom: 10px;
+}
+
+.transactions-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+.transactions-title-text {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.transactions-title-close-button {
+    font-weight: 'bold';
+    margin-right: 10px;
+}
+
+.transactions-dropdown-button {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+}
+
+.transactions-dropdown-button-text {
+    font-size: 14px;
+}
+
+.transactions-flex-end-section {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.transactions-pending-bat-type-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.transactions-pending-bat-icon {
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 12px;
+}
+
+.transactions-pending-bat-right-value {
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.lable-text {
+    margin: 3px 0 0 0;
+    padding: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-size: 12px;
+}
+
+.value-text {
+    margin: 0 0 0 2px;
+    padding: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #000;
+    font-size: 12px;
+}
+
+// banking tab
+.banking-tab-status-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.banking-tab-status-text {
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+    text-align: 'end';
+    color: var(--green);
+    font-weight: bold;
+}
+
+.status-declined {
+    color: red !important;
+}
+
+.banking-tab-status-icon {
+    margin-top: 2px;
+    color: var(--green);
+    font-size: 16px;
+}
+
+.banking-tab-amount {
+    text-align: end;
+    font-weight: bold;
+}
+
+.banking-tab-title {
+    padding: 0;
+    margin: 0;
+    font-weight: bold
+}
+
+.banking-tab-item-divider {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.banking-tab-expanded-container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+//result tab
+.stake-row {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.transactions-dropdown-button:after,
+.transactions-dropdown-button:before,
+.transactions-dropdown-button:hover:after,
+.transactions-dropdown-button:hover:before {
+    border-bottom: 0 !important;
+}
+
+.green-text {
+    color: var(--green) !important;
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold !important;
+}
+
+.large-font-size {
+    font-size: 17px !important;
+}
+
+.banking-tab-status-iconx {
+    color: var(--green);
+    font-size: 16px;
+    margin-bottom: -3px;
+    margin-left: 2px;
+}
+
+.result-tab-multi-sub-title {
+    margin-top: -10px;
+    margin-bottom: 5px;
+    padding-left: 32px;
+}
+
+.result-tab-multi-icon {
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.row-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.result-tab-title-row {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-Items: flex-start;
+    flex-direction: row;
+}
+
+.result-tab-title-row {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-Items: flex-start;
+    flex-direction: row;
+}
+
+.result-tab-title-right-top {
+    padding: 0;
+    margin: 0;
+    padding-right: 8px !important;
+}
+
+.no-padding-no-margin {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.RacingTabButtonx {
+    border-radius: 30px;
+    padding: 8px 11px;
+    min-height: 20px;
+    margin-right: 5px;
+    color: #000;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    border: 0;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.RacingTabButtonx:active,
+.RacingTabButtonx:focus {
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

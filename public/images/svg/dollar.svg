@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        fill: #fff;
+        font-family: FontAwesome;
+      }
+
+      .cls-1, .cls-2 {
+        text-anchor: middle;
+      }
+
+      .cls-2 {
+        font-size: 29px;
+        font-family: Roboto;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <text id="_" data-name="" class="cls-1" x="21.798" y="39.733"></text>
+  <text id="_2" data-name="$" class="cls-2" x="1.001" y="11.615">$</text>
+</svg>
